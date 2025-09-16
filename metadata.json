@@ -1,0 +1,5 @@
+{
+  "name": "Arkanoid Game",
+  "description": "A classic Arkanoid/Breakout style game with 3 levels, built with HTML Canvas and TypeScript.",
+  "requestFramePermissions": []
+}

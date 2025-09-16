@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Арканоид</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="game-container">
+        <h1>АРКАНОИД</h1>
+        <div id="ui-bar">
+            <span>СЧЕТ: <span id="score">0</span></span>
+            <span>УРОВЕНЬ: <span id="level">1</span></span>
+            <span>ЖИЗНИ: <span id="lives">3</span></span>
+        </div>
+        <canvas id="gameCanvas" width="800" height="600"></canvas>
+        <div id="game-overlay">
+            <div id="start-screen">
+                <h2>Добро пожаловать в Арканоид</h2>
+                <p>Управляйте платформой с помощью мыши, чтобы отбивать мяч и разрушать все кирпичи.</p>
+                <button id="start-button">Начать игру</button>
+            </div>
+            <div id="level-complete-screen" class="hidden">
+                <h2>Уровень пройден!</h2>
+                <button id="next-level-button">Следующий уровень</button>
+            </div>
+            <div id="game-over-screen" class="hidden">
+                <h2>Игра окончена</h2>
+                <p>Ваш итоговый счет: <span id="final-score">0</span></p>
+                <button id="restart-button">Перезапустить</button>
+            </div>
+            <div id="win-screen" class="hidden">
+                <h2>Поздравляем!</h2>
+                <p>Вы прошли все уровни!</p>
+                <p>Ваш итоговый счет: <span id="win-final-score">0</span></p>
+                <button id="win-restart-button">Играть снова</button>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="index.tsx"></script>
+</body>
+</html>
